@@ -1,7 +1,8 @@
 <template name="clinicalHistory">
-  <div id="clinicalHistory">
+  {{#if currentUser }}
     {{> clinicalImpressionInput}}
-
+  {{/if}}
+  <div id="clinicalHistory">
     {{#each clinicalImpressions}}
       {{> clinicalImpression}}
     {{/each}}

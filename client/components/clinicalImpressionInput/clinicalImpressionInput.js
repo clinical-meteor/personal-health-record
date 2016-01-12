@@ -10,11 +10,16 @@ Template.clinicalImpressionInput.helpers({
 });
 
 Template.clinicalImpressionInput.events({
-  "change, keyup #clinicalImpressionInput": function (event, template){
+  "change #clinicalImpressionInput": function (event, template){
     if (event.keyCode === 13) {
       ClinicalImpressions.insert({
         description: $("input[name=clinicalImpressionInput]").val()
       });
     }
+  },
+  "click #submitImpression": function (event, template){
+    ClinicalImpressions.insert({
+      description: $("input[name=clinicalImpressionInput]").val()
+    });
   }
 });
