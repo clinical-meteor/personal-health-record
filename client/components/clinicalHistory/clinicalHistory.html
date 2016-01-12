@@ -1,0 +1,9 @@
+<template name="clinicalHistory">
+  <div id="clinicalHistory">
+    {{> clinicalImpressionInput}}
+
+    {{#each clinicalImpressions}}
+      {{> clinicalImpression}}
+    {{/each}}
+  </div>
+</template>

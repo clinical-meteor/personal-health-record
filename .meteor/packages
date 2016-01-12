@@ -5,44 +5,25 @@
 # but you can also edit it by hand.
 
 
-# forward looking packages from Meteor 1.2 we want to migrate to
-# meteor-base             # Packages every Meteor app needs to have
-# mobile-experience       # Packages for a great mobile UX
-# blaze-html-templates    # Compile .html files into Meteor Blaze views
-#standard-minifiers      # JS/CSS minifiers run for production mode
-#es5-shim                # ECMAScript 5 compatibility for older browsers.
-#ecmascript              # Enable ECMAScript2015+ syntax in app code
-
-
-# existing packages we're currently using in Meteor 1.1.0.3
 meteor-platform
-templating
-
-
-# existing packages available in 1.1.0.3 which we can leave as-is
 mongo                   # The database Meteor supports right now
 session                 # Client-side reactive dictionary for your app
 jquery                  # Helpful client-side library
 tracker                 # Meteor's client-side reactive programming library
 
-
-# (in)security packages we should remove at some point
-autopublish             # Publish all data to the clients (for prototyping)
-insecure                # Allow all DB writes from clients (for prototyping)
+accounts-base
+accounts-password
 
 # clinical framework packages
-clinical:env@3.1.9
+clinical:env
 clinical:router
 clinical:extended-api
-clinical:active-layout@0.3.8
+clinical:active-layout
 clinical:active-entry
-#clinical:overlays
-#clinical:keybindings
+clinical:fonts
+clinical:theming
 
 photonic:glass-ui
 anti:gagarin
 
-# other packages used by clinical framework which need to be cleaned up
-awatson1978:fonts-helveticas
-fortawesome:fontawesome
 grove:less
