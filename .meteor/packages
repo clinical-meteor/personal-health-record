@@ -19,11 +19,20 @@ clinical:env
 clinical:router
 clinical:extended-api
 clinical:active-layout
+clinical:active-layout-reset
+clinical:active-layout-pagescreen-config
+clinical:error-pages
 clinical:active-entry
 clinical:fonts
 clinical:theming
+clinical:theming-ui
+clinical:glass-ui
+clinical:auto-resizing
+clinical:graphs-dailystats
+clinical:hl7-resource-datatypes
+#clinical:hl7-resource-clinical-impression
 
-photonic:glass-ui
+
 anti:gagarin
 
 grove:less
