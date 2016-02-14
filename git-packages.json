@@ -1,0 +1,39 @@
+{
+  "clinical:active-layout": {
+    "git": "https://github.com/clinical-meteor/clinical-active-layout.git"
+  },
+  "clinical:active-layout-reset": {
+    "git": "https://github.com/clinical-meteor/clinical-active-layout-reset.git"
+  },
+  "clinical:active-layout-pagescreen-config": {
+    "git": "https://github.com/clinical-meteor/clinical-active-layout-pagescreen-config.git"
+  },
+  "clinical:active-entry": {
+    "git": "https://github.com/clinical-meteor/clinical-active-entry.git"
+  },
+  "clinical:env": {
+    "git": "https://github.com/clinical-meteor/env.git"
+  },
+  "clinical:extended-api": {
+    "git": "https://github.com/clinical-meteor/extended-api.git"
+  },
+  "clinical:router": {
+    "git": "https://github.com/clinical-meteor/router.git"
+  },
+  "clinical:theming": {
+    "git": "https://github.com/clinical-meteor/clinical-theming.git"
+  },
+  "clinical:theming-ui": {
+    "git": "https://github.com/clinical-meteor/clinical-theming-ui.git"
+  },
+  "clinical:static-pages": {
+    "git": "https://github.com/clinical-meteor/clinical-static-pages.git"
+  },
+  "clinical:error-pages": {
+    "git": "https://github.com/clinical-meteor/clinical-error-pages.git"
+  },
+  "clinical:logging": {
+    "git": "https://github.com/clinical-meteor/logging.git"
+  }
+
+}
