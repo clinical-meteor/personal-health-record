@@ -1,14 +1,16 @@
 <template name="clinicalHistory">
-  {{#if currentUser }}
-    {{> clinicalImpressionInput}}
+  {{#if hasHistory}}
+    {{#if currentUser }}
+      {{> clinicalImpressionInput}}
+    {{/if}}
   {{/if}}
   <div id="clinicalHistory">
-    {{#if noHistory}}
-      {{> welcomePage}}
-    {{else}}
+    {{#if hasHistory}}
       {{#each clinicalImpressions}}
         {{> clinicalImpression}}
       {{/each}}
+    {{else}}
+      {{> welcomePage}}
     {{/if}}
   </div>
 </template>

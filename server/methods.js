@@ -38,13 +38,14 @@ Meteor.methods({
     ClinicalImpressions.insert(newImpression);
 
   },
-  scanFacebookFiles: function (){
-    console.log('scanFacebookFiles');
+  scanFacebookFiles: function (filepath){
+    console.log('scanFacebookFiles', filepath);
 
     var fs = Npm.require('fs');
     var path = Npm.require('path');
 
-    var data = fs.readFileSync('/Users/abigailwatson/Downloads/facebook/html/wall.htm', 'utf8');
+    var data = fs.readFileSync(filepath, 'utf8');
+    // var data = fs.readFileSync('/Users/abigailwatson/Downloads/facebook/html/wall.htm', 'utf8');
 
     //var cheerio = Npm.require('cheerio');
     $ = cheerio.load(data);

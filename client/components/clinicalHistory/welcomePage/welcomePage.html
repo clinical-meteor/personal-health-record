@@ -1,16 +1,27 @@
 <template name="welcomePage">
-  <div id="welcomePage" class="padded tile">
+  <div id="welcomePage" class="padded page" style="{{getPageHeight}}">
     <h2>Welcome!</h2>
     <p>
       Looks like you don't have any records.  Lets parse your Facebook profile!
     </p>
     <hr>
 
-    <img src="SettingsScreen.png" alt="" />
+      <h4>1.  Download a copy of your Facebook profile.</h4>
+      <img src="SettingsScreen.png" alt="" />
 
-    <img src="DownloadYourInformation.png" alt="" />
+      <h4>2.  Start your Archive.</h4>
+      <img src="DownloadYourInformation.png" alt="" />
 
-    <img src="RenameArchive.png" alt="" />
+      <h4>3.  Download and unbundle your profile.</h4>
+      <img src="RenameArchive.png" alt="" />
 
+      <h4>4.  Upload and parse the wall.htm file.</h4>
+      <br>
+      <input id="filePath" type="text" value="" placeholder="/Users/username/Downloads/facebook-profilename/html/wall.htm">
+      <br><br>
+      <button id="parseFacebookProfile" style="{{getButtonStyle}}">Parse Facebook Profile</button>
+    {{#if loggedOut }}
+      <span class="bold">Please <a href="/entrySignUp">create an account</a> and <a href="/entrySignIn">sign in</a> before uploading your profile.</span>
+    {{/if}}
   </div>
 </template>
