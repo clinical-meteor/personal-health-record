@@ -10,16 +10,14 @@
   ],
   "output_folder": "./tests/nightwatch/reports",
   "custom_commands_path": [
-    "./tests/nightwatch/commands",
-    "./tests/nightwatch/commands/api/meteor",
-    "./tests/nightwatch/commands/actions",
-    "./tests/nightwatch/commands/components",
-    "./tests/nightwatch/commands/methods",
-    "packages/clinical-active-entry/components/entrySignIn/.tests",
-    "packages/clinical-active-entry/components/entrySignIn/.tests/actions",
-    "packages/clinical-active-entry/components/entrySignUp/.tests",
-    "packages/clinical-active-entry/components/entrySignUp/.tests/actions",
-    "packages/clinical-active-entry/components/forgotPassword/.tests"
+    "packages/active-entry/components/entrySignIn/.tests",
+    "packages/active-entry/components/entrySignIn/.tests/actions",
+    "packages/active-entry/components/entrySignUp/.tests",
+    "packages/active-entry/components/entrySignUp/.tests/actions",
+    "packages/active-entry/components/forgotPassword/.tests",
+    "packages/active-entry/tests/nightwatch/commands",
+    "packages/keybindings/client/components/keybindingsModal/.tests",
+    "tests/nightwatch/commands"
   ],
   "custom_assertions_path": [
     "./tests/nightwatch/assertions"

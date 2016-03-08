@@ -19,6 +19,9 @@ Template.sidebar.rendered = function() {
 
 
 Template.sidebar.events({
+  'click #scanFacebookExportBtn': function (){
+    Meteor.call("scanFacebookFiles");
+  },
   'click #dropClinicalImpressions': function (){
     console.log("dropClinicalImpressions");
     Meteor.call("dropClinicalImpressions");

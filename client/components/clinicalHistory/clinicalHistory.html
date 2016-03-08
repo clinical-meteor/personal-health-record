@@ -3,8 +3,12 @@
     {{> clinicalImpressionInput}}
   {{/if}}
   <div id="clinicalHistory">
-    {{#each clinicalImpressions}}
-      {{> clinicalImpression}}
-    {{/each}}
+    {{#if noHistory}}
+      {{> welcomePage}}
+    {{else}}
+      {{#each clinicalImpressions}}
+        {{> clinicalImpression}}
+      {{/each}}
+    {{/if}}
   </div>
 </template>

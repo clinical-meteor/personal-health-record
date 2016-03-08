@@ -18,8 +18,8 @@ accounts-password
 clinical:env
 clinical:router
 clinical:extended-api
-clinical:active-entry
-clinical:active-layout
+clinical:active-entry@1.5.21
+clinical:active-layout@0.7.39
 clinical:active-layout-reset
 #clinical:active-layout-pagescreen-config
 clinical:error-pages
@@ -31,10 +31,14 @@ clinical:auto-resizing
 clinical:graphs-dailystats
 clinical:hl7-resource-datatypes
 clinical:user-model
+clinical:active-users
 
-#clinical:hl7-resource-clinical-impression
+#clinical:hl7-resource-clinical-impressioR
 
-anti:gagarin
+#anti:gagarin0.4.11
 grove:less
 digilord:faker
 momentjs:moment
+
+# cheerio parses DOM - used for parsing exported Facebook profiles
+fermuch:cheerio
