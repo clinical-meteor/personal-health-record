@@ -11,31 +11,31 @@
   "clinical:active-layout-pagescreen-config": {
     "git": "https://github.com/clinical-meteor/active-layout-pagescreen-config.git"
   },
+  "clinical:active-users": {
+    "git": "https://github.com/clinical-meteor/active-users.git"
+  },
   "clinical:env": {
     "git": "https://github.com/clinical-meteor/env.git"
+  },
+  "clinical:error-pages": {
+    "git": "https://github.com/clinical-meteor/error-pages.git"
   },
   "clinical:extended-api": {
     "git": "https://github.com/clinical-meteor/extended-api.git"
   },
+  "clinical:hipaa-logger": {
+    "git": "https://github.com/clinical-meteor/hipaa-logger.git"
+  },
   "clinical:router": {
     "git": "https://github.com/clinical-meteor/router.git"
+  },
+  "clinical:static-pages": {
+    "git": "https://github.com/clinical-meteor/static-pages.git"
   },
   "clinical:theming": {
     "git": "https://github.com/clinical-meteor/theming.git"
   },
   "clinical:theming-ui": {
     "git": "https://github.com/clinical-meteor/theming-ui.git"
-  },
-  "clinical:static-pages": {
-    "git": "https://github.com/clinical-meteor/static-pages.git"
-  },
-  "clinical:error-pages": {
-    "git": "https://github.com/clinical-meteor/error-pages.git"
-  },
-  "clinical:logging": {
-    "git": "https://github.com/clinical-meteor/logging.git"
-  },
-  "clinical:active-users": {
-    "git": "https://github.com/clinical-meteor/active-users.git"
   }
 }
