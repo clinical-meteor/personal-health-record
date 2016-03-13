@@ -33,6 +33,18 @@ The ClinicalMeteor PHR applet currently supports importing a profile via the ``S
 - [https://apps.facebook.com/netvizz](https://apps.facebook.com/netvizz/?code=AQDiegD7y5HazDT27RLZzOUMJyp4ZA3NLK5dTF43VPcDhbU1F80zzEgOxioZC3gA3_cdLEV7MOYhHV6l_v1VJnhQ_9CIPRYtrjmJfyA4fmrr9TEnwUfPwxGDPZDGSaoNthwCUrgDPGbW2On8bjuV7MlWBZ0ydeUAtp5olXPNtMNXH1Tfx9TvJCF_-pRRYhG2I8MMwNi3fsjUPledb7NnkoSje5UR_L4yWGYl5pNVmofyIo6RXA1E_uQyw5RFa1ALFWpuczN_DbUAeOkqdjeYgzHh9xGfiwrS8DY6yYI4DxkqStq6EYbD4EiUXUCLuepNnTpX8PlTZ6fG0WkdgQVTQnZQ&state=f3949717e6f7f3893bfe7fa0dd965ae0#_=_)
 
 
+======================================
+#### Contributions  
+
+There have been many, many requests over the years for PHR style functionality; so we expect there will be some Quantified Self enthusiests who will want to hack on this, and contribute functionality back.  The things we're looking to prioritize in the short term into this particular repository include:
+
+- Electron Support
+- Offline Database Support
+- Basic Medication Tracking Package
+- Basic Fitness Tracking Package
+
+Once those pieces are in place, we'll probably fork the project into a Social Health Record and Quantified Self app.
+
 
 ======================================
 #### Licensing
