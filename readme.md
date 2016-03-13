@@ -15,6 +15,15 @@ meteor
 ```
 
 ======================================
+#### Security  
+
+**IMPORTANT:  THIS SOFTWARE DOES NOT SHIP WITH ANY SECURITY IMPLEMENTED**  
+
+This software is **not** HIPAA compliant by default.  In fact, it has no security implemented at all by default.  The assuption is that people are going to want different security models...  some people will want a private record; others a friending model; others a collaboration model.  So don't just toss it online with your personal health information.  
+
+That being said, we **are** currently putting the security components under QA, investigating the best security model to use in production, and are in discussions with groups to build out a HIPAA compliant hosting solution.  So those features are on their way.  
+
+======================================
 #### Exporting a Facebook Profile
 
 The ClinicalMeteor PHR applet currently supports importing a profile via the ``Settings > General > Download a Copy`` functionality.  We will accept any pull-request that adds support for GraphQL integration, or other direct querying of the Facebook APIs.  
