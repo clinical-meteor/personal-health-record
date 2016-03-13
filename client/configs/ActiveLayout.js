@@ -23,7 +23,7 @@ Meteor.startup(function (){
     },
     defaults: {
       appSurfaceOffset: true,
-      fullscreenNavbars: true,
+      fullscreenNavbarsOverride: true,
       fullscreen: false,
       hasPagePadding: false,
       hasPageVerticalPadding: false,

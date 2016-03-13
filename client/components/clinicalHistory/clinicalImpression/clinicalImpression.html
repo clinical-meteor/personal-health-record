@@ -1,8 +1,10 @@
 <template name="clinicalImpression">
   <div class="clinicalImpression tile">
     <div class="impressionHeader">
-      <div class="patientDisplay">System</div>
+      <img class="userImage" src="{{ getAvatar }}" />
+      <div class="patientDisplay">{{patient.display}}</div>
       <div class="createdDate">{{getDate}}</div>
+      <i class="fa fa-remove"></i>
     </div>
     <div class="impressionContent">
       <span class="description">{{description}}</span>

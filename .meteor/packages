@@ -33,7 +33,7 @@ clinical:hl7-resource-datatypes
 clinical:user-model
 clinical:active-users
 
-#clinical:hl7-resource-clinical-impressioR
+clinical:hl7-resource-clinical-impression
 
 #anti:gagarin0.4.11
 grove:less

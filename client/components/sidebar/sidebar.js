@@ -19,6 +19,9 @@ Template.sidebar.rendered = function() {
 
 
 Template.sidebar.events({
+  'click #themingLink': function (){
+    Router.go('/theming');
+  },
   'click #scanFacebookExportBtn': function (){
     Meteor.call("scanFacebookFiles");
   },
@@ -39,10 +42,10 @@ Template.sidebar.events({
     }
   },
   "click #protocolLibraryLink": function (){
-     Router.go('/protocols');
+    Router.go('/protocols');
   },
-  'click #logoutButton': function() {
-    Meteor.logout(function(){
+  'click #logoutButton': function () {
+    Meteor.logout(function (){
       Router.go('/entrySignIn');
     });
 
@@ -53,7 +56,7 @@ Template.sidebar.events({
       Router.go('checklistPage', Lists.findOne({userId: {$exists: false}}));
     }
     if (Session.get("appWidth") < 1024) {
-      Session.set('useHorizontalFences', false)
+      Session.set('useHorizontalFences', false);
     }
 
   },

@@ -15,7 +15,7 @@ Template.clinicalHistory.helpers({
     }
   },
   clinicalImpressions: function (){
-    return ClinicalImpressions.find();
+    return ClinicalImpressions.find({}, {limit: 100, sort: {date: -1}});
   }
 });
 

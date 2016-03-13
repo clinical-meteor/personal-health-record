@@ -4,8 +4,8 @@
 
 
 Template.clinicalImpressionInput.helpers({
-  rendered: function (){
-
+  backgroundColor: function (){
+    return Theme.backgroundColor();
   }
 });
 
@@ -18,8 +18,32 @@ Template.clinicalImpressionInput.events({
     }
   },
   "click #submitImpression": function (event, template){
-    ClinicalImpressions.insert({
-      description: $("input[name=clinicalImpressionInput]").val()
-    });
+    var newImpression = {
+      "patient" : null,
+      "assessor" : "",
+      "status" : "",
+      "date" : new Date(),
+      "description" : $("input[name=clinicalImpressionInput]").val(),
+      "previous" : "",
+      "problem" : "",
+      "triggerCodableConceptSchema" : "",
+      "triggerReference" : "",
+      "protocol" : "",
+      "summary" : "",
+      "resolved" : "",
+      "prognosis" : "",
+      "plan" : "",
+      "action" : "",
+      "patient": {
+        "display" : Meteor.user().fullName(),
+        "reference" : Meteor.userId(),
+      }
+    };
+
+    ClinicalImpressions.insert(newImpression);
+
+    // ClinicalImpressions.insert({
+    //   description: $("input[name=clinicalImpressionInput]").val()
+    // });
   }
 });

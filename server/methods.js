@@ -50,18 +50,32 @@ Meteor.methods({
     //var cheerio = Npm.require('cheerio');
     $ = cheerio.load(data);
 
-    var comments = $('.comment');
+    var name = $('h1');
 
-    comments.each(function(i, element){
-      if (element.children && element.children[0]) {
-        //console.log(element.children[0].data);
+    // console.log("NAME: ", name[0].children[0].data);
+
+    var metas = $('.meta');
+
+    var historicalDate;
+    var endOfWellFormattedDate;
+
+    metas.each(function (j, meta){
+      historicalDate = false;
+      endOfWellFormattedDate = false;
+
+      if (meta && meta.next && meta.next.next && meta.next.next.attribs && (meta.next.next.attribs.class === "comment")) {
+        //console.log(meta.next.next.children[0].data);
+
+        var endOfWellFormattedDate = meta.children[0].data.split(" ", 4).join(" ").length;
+        historicalDate = new Date(meta.children[0].data.substring(0, endOfWellFormattedDate));
 
         var newImpression = {
           "patient" : null,
           "assessor" : "",
           "status" : "",
-          "date" : new Date(),
-          "description" : element.children[0].data,
+          "date" : historicalDate,
+          "description" : meta.next.next.children[0].data,
+          //"description" : element.children[0].data,
           "previous" : "",
           "problem" : "",
           "triggerCodableConceptSchema" : "",
@@ -73,10 +87,9 @@ Meteor.methods({
           "plan" : "",
           "action" : ""
         };
-
         if (Meteor.user()) {
           newImpression.patient = {
-            "display" : Meteor.user().fullName(),
+            "display" : name[0].children[0].data,
             "reference" : Meteor.userId(),
           };
         } else {
@@ -87,25 +100,57 @@ Meteor.methods({
         }
 
         ClinicalImpressions.insert(newImpression);
-
       }
     });
 
 
-    // if (selectedFile) {
-    //   var fileReader = new FileReader();
-    //   fileReader.onload = function (e) {
+
+    // var comments = $('.comment');
     //
-    //     //var jsonRepresentationOfCsv = CSV.parse(fileReader.result);
-    //     //console.log('jsonRepresentationOfCsv', jsonRepresentationOfCsv);
-    //     //Session.set('uploadedData', jsonRepresentationOfCsv);
-    //   };
-    //   fileReader.onerror = function (e) {
-    //     throw 'Error reading CSV file';
-    //   };
+    // comments.each(function(i, element){
+    //   if (element.children && element.children[0]) {
+    //     //console.log($(element.children[0].parent.prev).html());
     //
-    //   fileReader.readAsText(file);
-    // }
+    //     console.log(element.prev.html());
+    //
+    //     // var newDateString = $(element.children[0].id).prev().val();
+    //     // console.log('newDateString', newDateString);
+    //
+    //     var newImpression = {
+    //       "patient" : null,
+    //       "assessor" : "",
+    //       "status" : "",
+    //       "date" : new Date(),
+    //       "description" : element.children[0].data,
+    //       "previous" : "",
+    //       "problem" : "",
+    //       "triggerCodableConceptSchema" : "",
+    //       "triggerReference" : "",
+    //       "protocol" : "",
+    //       "summary" : "",
+    //       "resolved" : "",
+    //       "prognosis" : "",
+    //       "plan" : "",
+    //       "action" : ""
+    //     };
+    //
+    //     if (Meteor.user()) {
+    //       newImpression.patient = {
+    //         "display" : Meteor.user().fullName(),
+    //         "reference" : Meteor.userId(),
+    //       };
+    //     } else {
+    //       newImpression.patient = {
+    //         "display" : "System",
+    //         "reference" : "",
+    //       };
+    //     }
+    //
+    //     ClinicalImpressions.insert(newImpression);
+    //
+    //   }
+    // });
+
 
 
     console.log('Scanning selected files...');

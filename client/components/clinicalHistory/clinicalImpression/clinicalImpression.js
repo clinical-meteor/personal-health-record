@@ -1,8 +1,8 @@
 
 
 Template.clinicalImpression.events({
-  "click #event": function (event, template){
-
+  "click .fa-remove": function (event, template){
+    ClinicalImpressions.remove(this._id);
   }
 });
 

@@ -5,36 +5,15 @@
 
         <div id="usernameLink" class="sidebarMenuItem withLowerBorder">{{getUsername}}</div>
         <div id="homeLink" class="sidebarMenuItem">Home</div>
-        <!-- <div id="protocolLibraryLink" class="sidebarMenuItem withLowerBorder">Protocols</div> -->
 
         {{#if currentUser}}
-          <div class="withLowerBorder">
-
-            <!-- <div id="newListButton" class="sidebarMenuItem">New List<i class="fa fa-plus"></i></div>
-
-            <div id="lists">
-              {{#each lists}}
-                <a href="{{pathFor 'checklistPage'}}" class="listItem {{activeListClass}}" title="{{name}}">
-                  {{#if userId}}
-                    <i class="fa fa-lock"></i>
-                  {{/if}}
-                  {{name}}
-                  {{#if incompleteCount}}
-                    <span class="count-list">{{incompleteCount}}</span>
-                  {{/if}}
-                </a>
-              {{/each}}
-            </div> -->
-          </div>
+          <a id="themingLink" class="sidebarMenuItem">Theming</a>
+          <a id="generateSampleData" class="sidebarMenuItem">Generate Sample Data</a>
+          <a id="dropClinicalImpressions" class="sidebarMenuItem withLowerBorder">Clear Data</a>
         {{/if}}
 
-        <a id="generateSampleData">Generate Sample Data</a>
-        <a id="dropClinicalImpressions">Clear Data</a>
-
-        <!-- <a id="scanFacebookExportBtn">Scan Facebook Files</a> -->
-
         {{#if currentUser}}
-          <a id="logoutButton" class="withLowerBorder">Logout</a>
+          <a id="logoutButton" class="sidebarMenuItem withLowerBorder">Logout</a>
         {{/if}}
 
         <div id="connectionStatusPanel" class="centered">
