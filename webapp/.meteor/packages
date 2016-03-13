@@ -1,0 +1,44 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+
+meteor-platform
+mongo                   # The database Meteor supports right now
+session                 # Client-side reactive dictionary for your app
+jquery                  # Helpful client-side library
+tracker                 # Meteor's client-side reactive programming library
+
+accounts-base
+accounts-password
+
+# clinical framework packages
+clinical:env
+clinical:router
+clinical:extended-api
+clinical:active-entry@1.5.21
+clinical:active-layout@0.7.39
+clinical:active-layout-reset
+#clinical:active-layout-pagescreen-config
+clinical:error-pages
+clinical:fonts
+clinical:theming-ui
+clinical:default-theme
+clinical:glass-ui
+clinical:auto-resizing
+#clinical:graphs-dailystats
+clinical:user-model
+clinical:active-users@0.2.0
+
+clinical:hl7-resource-datatypes
+clinical:hl7-resource-clinical-impression
+
+#anti:gagarin0.4.11
+grove:less
+digilord:faker
+momentjs:moment
+
+# cheerio parses DOM - used for parsing exported Facebook profiles
+fermuch:cheerio
