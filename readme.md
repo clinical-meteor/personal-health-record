@@ -1,6 +1,9 @@
 ## personal-health-record
 
-Load a FaceBook profile using the Clinical Meteor Track.
+This project is intended to help a person assemble a Personal Health Record.  A PHR is similar to a weblog, but healthcare oriented.  We're starting this project by enabling people to import what is likely to be their largest source of weblog data... their Facebook profile.  In future versions, we will include fitness tracking, medication tracking, and other features to help an individual assemble their entire medical history in a single place.  
+
+
+![PHR-MultiDevices](https://raw.githubusercontent.com/awatson1978/personal-health-record/master/public/PHR-MultiDevices.png)
 
 ======================================
 #### Installation
@@ -14,12 +17,15 @@ meteor
 ======================================
 #### Exporting a Facebook Profile
 
+The ClinicalMeteor PHR applet currently supports importing a profile via the ``Settings > General > Download a Copy`` functionality.  We will accept any pull-request that adds support for GraphQL integration, or other direct querying of the Facebook APIs.  
+
 - [http://givememydata.com/#how_to_use](http://givememydata.com/#how_to_use)
 - [https://github.com/KyleAMathews/facebook-export](https://github.com/KyleAMathews/facebook-export)
 - [https://apps.facebook.com/netvizz](https://apps.facebook.com/netvizz/?code=AQDiegD7y5HazDT27RLZzOUMJyp4ZA3NLK5dTF43VPcDhbU1F80zzEgOxioZC3gA3_cdLEV7MOYhHV6l_v1VJnhQ_9CIPRYtrjmJfyA4fmrr9TEnwUfPwxGDPZDGSaoNthwCUrgDPGbW2On8bjuV7MlWBZ0ydeUAtp5olXPNtMNXH1Tfx9TvJCF_-pRRYhG2I8MMwNi3fsjUPledb7NnkoSje5UR_L4yWGYl5pNVmofyIo6RXA1E_uQyw5RFa1ALFWpuczN_DbUAeOkqdjeYgzHh9xGfiwrS8DY6yYI4DxkqStq6EYbD4EiUXUCLuepNnTpX8PlTZ6fG0WkdgQVTQnZQ&state=f3949717e6f7f3893bfe7fa0dd965ae0#_=_)
 
 
+
 ======================================
 #### Licensing
 
-MIT.  Use as you will.
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
