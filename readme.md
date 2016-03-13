@@ -41,8 +41,10 @@ There have been many, many requests over the years for PHR style functionality; 
 - Cordova Support (Hammer, etc)
 - Electron Support 
 - Offline Database Support
+- GraphQL Integration
 - Basic Medication Tracking Package
 - Basic Fitness Tracking Package
+- Basic ICD10 Diagnosis Package
 
 Once those pieces are in place, we'll probably fork the project into a Social Health Record and Quantified Self app.
 
