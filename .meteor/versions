@@ -24,7 +24,6 @@ clinical:error-pages@0.1.1
 clinical:extended-api@2.2.2
 clinical:fonts@1.0.0
 clinical:glass-ui@1.3.10
-clinical:graphs-dailystats@2.4.5
 clinical:hl7-resource-clinical-impression@1.0.0
 clinical:hl7-resource-datatypes@0.0.1
 clinical:keybindings@1.2.6
@@ -37,7 +36,6 @@ clinical:theming@0.4.9
 clinical:theming-ui@0.2.5
 clinical:user-model@1.4.2
 coffeescript@1.0.6
-d3js:d3@3.5.8
 ddp@1.1.0
 deps@1.0.7
 digilord:faker@1.0.7
@@ -74,7 +72,6 @@ momentjs:moment@2.12.0
 mongo@1.1.0
 mousetrap:mousetrap@1.4.6_1
 npm-bcrypt@0.7.8_2
-nvd3:nvd3@1.7.1
 observe-sequence@1.0.6
 ordered-dict@1.0.3
 prime8consulting:meteor-oauth2-server@0.0.2

@@ -34,6 +34,8 @@
   },
   "clinical:logging": {
     "git": "https://github.com/clinical-meteor/logging.git"
+  },
+  "clinical:active-users": {
+    "git": "https://github.com/clinical-meteor/active-users.git"
   }
-
 }

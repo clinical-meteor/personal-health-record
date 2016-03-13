@@ -28,11 +28,11 @@ clinical:theming-ui
 clinical:default-theme
 clinical:glass-ui
 clinical:auto-resizing
-clinical:graphs-dailystats
-clinical:hl7-resource-datatypes
+#clinical:graphs-dailystats
 clinical:user-model
-clinical:active-users
+clinical:active-users@0.2.0
 
+clinical:hl7-resource-datatypes
 clinical:hl7-resource-clinical-impression
 
 #anti:gagarin0.4.11
