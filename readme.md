@@ -38,7 +38,8 @@ The ClinicalMeteor PHR applet currently supports importing a profile via the ``S
 
 There have been many, many requests over the years for PHR style functionality; so we expect there will be some Quantified Self enthusiests who will want to hack on this, and contribute functionality back.  The things we're looking to prioritize in the short term into this particular repository include:
 
-- Electron Support
+- Cordova Support (Hammer, etc)
+- Electron Support 
 - Offline Database Support
 - Basic Medication Tracking Package
 - Basic Fitness Tracking Package
