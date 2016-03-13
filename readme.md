@@ -1,5 +1,7 @@
 ## personal-health-record
 
+[![Circle CI](https://circleci.com/gh/clinical-meteor/personal-health-record/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/personal-health-record/tree/master)
+
 This project is intended to help a person assemble a Personal Health Record.  A PHR is similar to a weblog, but healthcare oriented.  We're starting this project by enabling people to import what is likely to be their largest source of weblog data... their Facebook profile.  In future versions, we will include fitness tracking, medication tracking, and other features to help an individual assemble their entire medical history in a single place.  
 
 
